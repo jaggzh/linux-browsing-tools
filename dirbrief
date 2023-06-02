@@ -36,7 +36,7 @@ dir=${1:-.}
 base_depth=$(tr -dc '/' <<< "$dir" | awk '{ print length }')
 
 # Preview command
-preview_cmd="if [[ -d {2..} ]]; then echo \"{2..} is a directory\"; else head -n '$prev_lines' '{1..}'; fi"
+preview_cmd="if [[ -d {2..} ]]; then echo \"DIRECTORY: {2..}\"; ls -lgGh --color=always -- {2..} | tail -n +2; else head -n '$prev_lines' '{1}'; fi"
 bcya=$'\033[36;1m'
 yel=$'\033[33;1m'
 rst=$'\033[;m'

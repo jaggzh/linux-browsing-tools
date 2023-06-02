@@ -9,3 +9,5 @@ Browse directories easier and stuff...
 # Utilities
 
 * **dirbrief:** For quickly browsing through folders and files, limiting the number of files in the listing
+  ![Screenshot of dirbrief utility](i/ss-dirbrief.png "Screenshot of dirbrief utility")
+
